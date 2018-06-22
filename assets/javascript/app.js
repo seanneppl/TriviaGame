@@ -9,11 +9,11 @@ $(document).ready(function () {
                     ca: "Brown Rice by Don Cherry",song: "01.mp3" },
 
                     {question: "What tune is this?",
-                    answers: ["Ghost Variations pt. 1 by Albert Ayler Trio",
+                    answers: ["Ghost Variations pt. 1 by Albert Ayler",
                     "Fiesta by Archie Shepp",
                     "Congeniality by Ornette Coleman",
                     "Spirits Rejoice by Albert Ayler"],
-                    ca: "Ghost Variations pt. 1 by Albert Ayler Trio", song: "02.mp3"
+                    ca: "Ghost Variations pt. 1 by Albert Ayler", song: "02.mp3"
                     },
 
                     { question: "What tune is this?",
@@ -25,19 +25,19 @@ $(document).ready(function () {
 
                     { question: "What tune is this?",
                     answers:
-                    ["John Coltrane by My Favorite Things",
-                    "Alice Coltrane by My Favorite Things",
-                    "Herb Alpert and the Tijuana Brass by My Favorite Things",
-                    "George Shearing by My Favorite Things"],
-                    ca: "John Coltrane by My Favorite Things", song: "04.mp3" },
+                    ["My Favorite Things by John Coltrane",
+                    "My Favorite Things by Alice Coltrane",
+                    "My Favorite Things by Herb Alpert and the Tijuana Brass",
+                    "My Favorite Things by George Shearing"],
+                    ca: "My Favorite Things by John Coltrane", song: "04.mp3" },
 
                     { question: "What tune is this?",
                     answers:
-                    ["Andrew Hill by Black Fire",
-                    "Sam Rivers by Contours",
-                    "Herbie Hancock by The Pleasure Is Mine",
-                    "Keith Jarrett by It Never Entered My Mind"],
-                    ca: "Andrew Hill by Black Fire", song: "05.mp3" },
+                    ["Black Fire by Andrew Hill",
+                    "Contours by Sam Rivers",
+                    "The Pleasure Is Mine by Herbie Hancock",
+                    "It Never Entered My Mind by Keith Jarrett"],
+                    ca: "Black Fire by Andrew Hill", song: "05.mp3" },
 
                     { question: "What tune is this?",
                     answers:
@@ -193,9 +193,7 @@ $(document).ready(function () {
 
                     function fadeOut() {
                         if (vol > .2 && inc < questions.length){
-                            // $("#sound").volume
                             document.getElementById("sound").volume = vol.toFixed(2);
-                            // $("#sound").volume = vol;/
                             vol -= 0.1;
                             console.log(document.getElementById("sound").volume);
                             setTimeout(fadeOut, 1000);
