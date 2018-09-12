@@ -1,4 +1,4 @@
-#Trivia Game
+# Trivia Game
 
 [Trivia Game](https://seanneppl.github.io/TriviaGame/index.html) is a jQuery and html5/css web application that prompts the user to guess the song that is currently playing.
 The songs are presented in random order each time the game is played and the player is given 30 seconds to guess from four options.
